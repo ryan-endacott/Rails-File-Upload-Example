@@ -4,8 +4,6 @@
   <thead>
     <tr>
       <th>Filename</th>
-      <th>Content type</th>
-      <th>File contents</th>
       <th></th>
       <th></th>
     </tr>
@@ -15,8 +13,6 @@
     <% @documents.each do |document| %>
       <tr>
         <td><%= document.filename %></td>
-        <td><%= document.content_type %></td>
-        <td><%= document.file_contents %></td>
         <td><%= link_to 'Download', document %></td>
         <td><%= link_to 'Destroy', document, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
