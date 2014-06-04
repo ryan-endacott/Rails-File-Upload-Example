@@ -17,10 +17,6 @@ class DocumentsController < ApplicationController
     @document = Document.new
   end
 
-  # GET /documents/1/edit
-  def edit
-  end
-
   # POST /documents
   # POST /documents.json
   def create
