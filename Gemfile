@@ -11,6 +11,9 @@ end
 group :production do
   # Postgres for heroku
   gem 'pg'
+
+  # Assets on heroku
+  gem 'rails_12factor'
 end
 
 # Use SCSS for stylesheets
