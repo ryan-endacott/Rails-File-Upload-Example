@@ -16,7 +16,7 @@
       <tr>
         <td><%= document.filename %></td>
         <td><%= link_to 'Download', document %></td>
-        <td><%= link_to 'Destroy', document, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= button_to 'Destroy', document, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
