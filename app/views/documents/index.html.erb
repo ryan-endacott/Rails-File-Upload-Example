@@ -15,7 +15,7 @@
     <% @documents.each do |document| %>
       <tr>
         <td><%= document.filename %></td>
-        <td><%= link_to 'Download', document %></td>
+        <td><%= button_to 'Download', document, method: :get %></td>
         <td><%= button_to 'Destroy', document, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
